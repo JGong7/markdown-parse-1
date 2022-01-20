@@ -12,11 +12,15 @@ public class MarkdownParse {
         int currentIndex = 0;
         while(currentIndex < markdown.length()) {
             int nextOpenBracket = markdown.indexOf("[", currentIndex);
+            System.out.println(currentIndex);
             int nextCloseBracket = markdown.indexOf("]", nextOpenBracket);
+            //the second argument is for where to start searching
+            //if not provided, then it will start seraching at index 0
             int openParen = markdown.indexOf("(", nextCloseBracket);
             int closeParen = markdown.indexOf(")", openParen);
             toReturn.add(markdown.substring(openParen + 1, closeParen));
             currentIndex = closeParen + 1;
+            System.out.println(currentIndex);
         }
         return toReturn;
     }
