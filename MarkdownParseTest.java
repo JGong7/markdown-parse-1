@@ -36,7 +36,7 @@ public class MarkdownParseTest {
         Path fileName = Path.of("/Users/peila/Documents/GitHub/markdown-parse/test3.md");
 	    String contents = Files.readString(fileName);
         ArrayList<String> links = MarkdownParse.getLinks(contents);
-        assertEquals(List.of(""),
+        assertEquals(List.of(),
              links);
     }
 
