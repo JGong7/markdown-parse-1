@@ -10,7 +10,7 @@ import org.junit.*;
 public class MarkdownParseTest {
     @Test //indicating the following method is a tester
     public void addition() {
-        assertEquals(3, 1 + 1);
+        assertEquals(2, 1 + 1);
     } //test
 
     @Test //call getLink() on test-file.md
